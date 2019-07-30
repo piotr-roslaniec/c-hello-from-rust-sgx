@@ -1,0 +1,14 @@
+[package]
+name = "app"
+version = "1.0.0"
+authors = ["Baidu"]
+build = "build.rs"
+
+[lib]
+name = "app"
+crate-type = ["dylib"]
+
+[dependencies]
+sgx_types = { path = "/root/sgx/sgx_types" }
+sgx_urts = { path = "/root/sgx/sgx_urts" }
+dirs = "1.0.2"
